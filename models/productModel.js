@@ -14,7 +14,7 @@ const allList = {
     return data;
   },
 
-  async postName(value) {
+  async add(value) {
     const [{ insertId }] = await db.execute(
       'INSERT INTO products (name) VALUES (?)', [value.name],
     );

@@ -1,6 +1,12 @@
+const Joi = require('joi');
 const productModel = require('../models/productModel');
+const { runSchema } = require('./utils');
 
 const allList = {
+  validateBody: runSchema(Joi.object({
+    name: Joi.string().required().min(5),
+  })),
+  
   async getAll() {
     const data = await productModel.getAll();
     return data;
@@ -11,8 +17,8 @@ const allList = {
     return data;
   },
 
-  async postName(value) {
-    const data = await productModel.postName(value);
+  async add(value) {
+    const data = await productModel.add(value);
     return data;
   },
 };

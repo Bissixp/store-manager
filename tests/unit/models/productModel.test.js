@@ -25,8 +25,8 @@ describe('Model/ProductModel', () => {
       chai.expect(userModel.getById(1)).to.eventually.be.rejected;
     });
     it('Deve retornar um array com objetos caso não dê erro', async () => {
-      sinon.stub(db, 'execute').resolves([{}]);
-      chai.expect(userModel.getById(1)).to.eventually.deep.equal([{}]);
+      sinon.stub(db, 'execute').resolves([[{}]]);
+      chai.expect(userModel.getById(1)).to.eventually.deep.equal({});
     });
   })
 });
