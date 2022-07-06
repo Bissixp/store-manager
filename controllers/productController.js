@@ -4,7 +4,6 @@ const productController = {
   /** @type {import('express').RequestHandler} */
   async getAll(_req, res) {
     const data = await productService.getAll();
-    if (!data) return res.status(404).json({ message: 'Product not found' });
     res.status(200).json(data);
   },
 
