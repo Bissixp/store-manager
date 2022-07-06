@@ -1,6 +1,6 @@
 const productService = require('../services/productService');
 
-const allList = {
+const productController = {
   /** @type {import('express').RequestHandler} */
   async getAll(_req, res) {
     const data = await productService.getAll();
@@ -30,4 +30,4 @@ const allList = {
   },
 };
 
-module.exports = allList;
+module.exports = productController;

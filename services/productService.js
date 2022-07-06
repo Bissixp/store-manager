@@ -2,7 +2,7 @@ const Joi = require('joi');
 const productModel = require('../models/productModel');
 const { runSchema } = require('./utils');
 
-const allList = {
+const productService = {
   validateBody: runSchema(Joi.object({
     name: Joi.string().required().min(5),
   })),
@@ -24,4 +24,4 @@ const allList = {
   },
 };
 
-module.exports = allList;
+module.exports = productService;

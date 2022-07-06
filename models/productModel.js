@@ -1,6 +1,6 @@
 const db = require('./db');
 
-const allList = {
+const productModel = {
   async getAll() {
     const [data] = await db.execute(
       'SELECT * FROM products',
@@ -22,4 +22,4 @@ const allList = {
   },
 };
 
-module.exports = allList;
+module.exports = productModel;

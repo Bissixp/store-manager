@@ -12,11 +12,9 @@ const salesController = {
       await Promise.all(
         value.map((item) => productService.getById(item.productId)),
       );
-      console.log(value);
       const result = await salesService.addProduct(value);
       res.status(201).json(result);
     } catch (error) {
-      console.log(error);
       next(error);
     }
   },
