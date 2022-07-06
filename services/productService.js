@@ -14,7 +14,8 @@ const allList = {
 
   async getById(id) {
     const data = await productModel.getById(id);
-    return data;
+    if (!data) throw new Error('Product not found');
+      return data;
   },
 
   async add(value) {

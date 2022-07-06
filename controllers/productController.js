@@ -9,10 +9,13 @@ const allList = {
   },
 
   async getById(req, res) {
-    const id = Number(req.params.id);
-    const data = await productService.getById(id);
-    if (!data) return res.status(404).json({ message: 'Product not found' });
-    res.status(200).json(data);
+    try {
+      const id = Number(req.params.id);
+      const data = await productService.getById(id);
+      res.status(200).json(data);
+    } catch (error) {
+      res.status(404).json({ message: error.message });
+    }
   },
 
   async add(req, res, next) {
