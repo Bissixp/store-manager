@@ -39,6 +39,16 @@ const productController = {
       next(error);
     }
   },
+  async deleteProduct(req, res, next) {
+    try {
+      const id = Number(req.params.id);
+      await productService.getById(id);
+      await productService.deleteProduct(id);
+      res.sendStatus(204);
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 module.exports = productController;

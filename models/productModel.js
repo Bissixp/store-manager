@@ -26,6 +26,11 @@ const productModel = {
       'UPDATE products SET name = ? WHERE id = ?', [value.name, id],
     );
   },
+  async deleteProduct(id) {
+    await db.execute(
+      'DELETE FROM products WHERE id = ?', [id],
+    );
+  },
 };
 
 module.exports = productModel;
