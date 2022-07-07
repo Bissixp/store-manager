@@ -3,8 +3,9 @@ const productController = require('../controllers/productController');
 
 const productRouter = Router();
 
-productRouter.get('/', productController.getAll);
 productRouter.get('/:id', productController.getById);
+productRouter.put('/:id', productController.editProduct);
+productRouter.get('/', productController.getAll);
 productRouter.post('/', productController.add);
 
 module.exports = productRouter;

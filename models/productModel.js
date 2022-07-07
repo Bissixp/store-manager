@@ -20,6 +20,12 @@ const productModel = {
     );
     return insertId;
   },
+  
+  async editProduct(id, value) {
+      await db.execute(
+      'UPDATE products SET name = ? WHERE id = ?', [value.name, id],
+    );
+  },
 };
 
 module.exports = productModel;

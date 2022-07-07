@@ -219,13 +219,18 @@
     "colId": "history",
     "containerId": "",
     "name": "localhost:3000/products/",
-    "url": "localhost:3000/products/4",
-    "method": "GET",
+    "url": "localhost:3000/products/3",
+    "method": "PUT",
     "sortNum": 0,
     "created": "2022-06-29T20:53:17.542Z",
-    "modified": "2022-07-06T22:13:58.276Z",
+    "modified": "2022-07-07T17:47:47.005Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": " {\n    \"name\": \"martelo\"\n }",
+      "form": []
+    },
     "tests": []
   },
   {
