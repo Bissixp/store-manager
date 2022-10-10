@@ -62,6 +62,16 @@ npm start
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
 
  </details>
+ <details>
+ <summary><strong>:computer: Populando o Banco de dados</strong></summary><br />
+Conecte ao servidor MySQL rodando na porta 3306 usando o cliente MySQL e utilize as seguintes credenciais:
+
+* host: `db`
+* user: `root`
+* password: `password`
+
+execute os scripts que estão nos arquivos migration.sql e seed.sql no workbench.
+ </details>
 
 
 ## 📋 Tecnologias utilizadas
