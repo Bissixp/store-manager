@@ -1,10 +1,77 @@
-# 🚧 README em construção 🚧
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+##  :page_with_curl: Store Manager
+Neste projeto foi desenvolvido uma API RESTful, utilizando a arquitetura MSC (model-service-controller)
+
+A API é um sistema de gerenciamento de vendas que é possível criar, visualizar, deletar e atualizar produtos e vendas, foi utilizado o banco de dados MySQL para a gestão de dados.
+
+E também foi implementado testes unitários.
+
+## Instalação
+<details>
+  <summary><strong>:whale: Com Docker ou sem Docker</strong></summary><br />
+  
+  ## Sem Docker
+
+  ### 1 - Clone o repositório
+```bash
+git clone git@github.com:Bissixp/store-manager.git
+```
+  ### 2 - Mude para pasta do repositório
+```bash
+cd store-manager
+```
+  ### 3 - Instale as dependências
+```bash
+npm install
+```
+  ### 4 - Rode o servidor
+```bash
+npm start
+```
+### 5 - Faça requisições para o servidor aberto na porta 3001
+Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
+
+---
+
+## Com docker
+
+### 1 - Clone o repositório
+```bash
+git clone git@github.com:Bissixp/store-manager.git
+```
+### 2 - Mude para pasta do repositório
+```bash
+cd store-manager
+```
+### 3 - Rode o contêiner na pasta raiz da aplicação
+```bash
+docker-compose up -d
+```
+### 4 - Abra o terminal do container
+```bash
+docker exec -it store_manager bash
+```
+### 5 - Instale as dependências no terminal do container
+```bash
+npm install
+```
+### 6 - Rode o servidor
+```bash
+npm start
+```
+### 7 - Faça requisições para o servidor aberto na porta 3001
+Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
+
+ </details>
+
+
+## 📋 Tecnologias utilizadas
+
+- JavaScript
+- Node.js
+- Express.js
+- MySQL
+- Joi
+- Docker
+- Mocha
+- Chai
+- Sinon
