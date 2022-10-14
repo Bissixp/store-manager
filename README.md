@@ -7,32 +7,7 @@ E também foi implementado testes unitários.
 
 ## Instalação
 <details>
-  <summary><strong>:whale: Com Docker ou sem Docker</strong></summary><br />
-  
-  ## Sem Docker
-
-  ### 1 - Clone o repositório
-```bash
-git clone git@github.com:Bissixp/store-manager.git
-```
-  ### 2 - Mude para pasta do repositório
-```bash
-cd store-manager
-```
-  ### 3 - Instale as dependências
-```bash
-npm install
-```
-  ### 4 - Rode o servidor
-```bash
-npm start
-```
-### 5 - Faça requisições para o servidor aberto na porta 3001
-Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
-
----
-
-## Com docker
+  <summary><strong>:whale: Com Docker</strong></summary><br />
 
 ### 1 - Clone o repositório
 ```bash
@@ -58,10 +33,35 @@ npm install
 ```bash
 npm start
 ```
-### 7 - Faça requisições para o servidor aberto na porta 3001
+### 7 - Faça requisições para o servidor aberto na porta 3000
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
 
  </details>
+ <details>
+  <summary><strong>:computer: Sem Docker</strong></summary><br />
+ 
+
+  ### 1 - Clone o repositório
+```bash
+git clone git@github.com:Bissixp/store-manager.git
+```
+  ### 2 - Mude para pasta do repositório
+```bash
+cd store-manager
+```
+  ### 3 - Instale as dependências
+```bash
+npm install
+```
+  ### 4 - Rode o servidor
+```bash
+npm start
+```
+### 5 - Faça requisições para o servidor aberto na porta 3000
+Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
+
+</details>
+
  <details>
  <summary><strong>:computer: Populando o Banco de dados</strong></summary><br />
 Conecte ao servidor MySQL rodando na porta 3306 usando o cliente MySQL e utilize as seguintes credenciais:
