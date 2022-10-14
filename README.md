@@ -29,7 +29,7 @@ docker exec -it store_manager bash
 ```bash
 npm install
 ```
-### 6 - Rode o servidor
+### 6 - Rode o servidor no terminal do container
 ```bash
 npm start
 ```
